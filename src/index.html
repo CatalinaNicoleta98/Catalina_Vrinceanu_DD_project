@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kate's gallery</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/> <!-- font awesome -->
-    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container-fluid g-0 m-0 p-0">
@@ -325,17 +324,17 @@
 
             <div class="form d-flex justify-content-start mb-5">
 
-              <form>
+              <form onsubmit="return validateLogInForm()">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                   <label class="form-check-label" for="exampleCheck1">Yes, I would like to receive news news from this website!</label>
                 </div>
-                <button type="submit" class="btn btn-outline-dark rounded-3">Submit</button>
+                <button type="submit" class="btn btn-outline-dark rounded-3" onclick="validation()">Submit</button>
               </form>
 
             </div>
@@ -408,5 +407,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,11 @@
 $first-color: rgb(214, 129, 129);
+$second-color: rgb(241, 140, 17);
 .first-color {
-  color: $first-color;
+  background-color: $first-color;
+}
+
+.second-color {
+  color: $second-color;
 }
 
 
@@ -17,9 +22,7 @@ $first-color: rgb(214, 129, 129);
 
 
 
-
-
-@import "./fontawesome/scss/fontawesome.scss";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"); // Font Awesome url
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
