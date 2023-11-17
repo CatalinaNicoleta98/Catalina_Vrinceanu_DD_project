@@ -1,5 +1,5 @@
 $first-color: rgb(214, 129, 129);
-$second-color: rgb(241, 140, 17);
+$second-color: rgb(251, 182, 91);
 .first-color {
   background-color: $first-color;
 }
@@ -8,6 +8,17 @@ $second-color: rgb(241, 140, 17);
   color: $second-color;
 }
 
+.my-font {
+  font-family: "Libre Baskerville", serif;
+}
+
+h1{
+  font-family: "Libre Baskerville", serif;
+}
+
+h5 {
+  font-family: "Noto Serif Balinese", serif;
+}
 
 
 
@@ -16,10 +27,9 @@ $second-color: rgb(241, 140, 17);
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap');
 
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"); // Font Awesome url
